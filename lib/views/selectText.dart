@@ -15,7 +15,7 @@ class SelectText extends StatelessWidget {
       child: Text(
         title ?? "?",
         textAlign: TextAlign.center,
-        style: isSelect ? StandartTextStyle.big : StandartTextStyle.bigWithOpacity,
+        style: isSelect ? StandardTextStyle.big : StandardTextStyle.bigWithOpacity,
       ),
     );
   }

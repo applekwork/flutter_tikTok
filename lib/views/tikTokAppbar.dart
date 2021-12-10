@@ -25,8 +25,8 @@ class TikTokSwitchAppbar extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Text(list![i],
                 style: index == i
-                    ? StandartTextStyle.big
-                    : StandartTextStyle.bigWithOpacity),
+                    ? StandardTextStyle.big
+                    : StandardTextStyle.bigWithOpacity),
           ),
         ),
       );

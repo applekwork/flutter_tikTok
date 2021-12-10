@@ -21,7 +21,7 @@ class AdMusicsText extends StatelessWidget {
             key: key,
             text: text,
             style: style,
-            defaultStyle: StandartTextStyle.small,
+            defaultStyle: StandardTextStyle.small,
             enableOffset: enableOffset);
 
   const AdMusicsText.normal(String text,
@@ -30,7 +30,7 @@ class AdMusicsText extends StatelessWidget {
             key: key,
             text: text,
             style: style,
-            defaultStyle: StandartTextStyle.normal,
+            defaultStyle: StandardTextStyle.normal,
             enableOffset: enableOffset);
   const AdMusicsText.big(
     String text, {
@@ -41,7 +41,7 @@ class AdMusicsText extends StatelessWidget {
             key: key,
             text: text,
             style: style,
-            defaultStyle: StandartTextStyle.big,
+            defaultStyle: StandardTextStyle.big,
             enableOffset: enableOffset);
 
   bool get isAsci {

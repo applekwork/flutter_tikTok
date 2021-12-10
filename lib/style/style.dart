@@ -13,7 +13,7 @@ class SysSize {
 }
 
 //常用文本样式
-class StandartTextStyle {
+class StandardTextStyle {
   static const TextStyle big = const TextStyle(
       fontWeight: FontWeight.w600, fontSize: SysSize.big, inherit: true);
   static const TextStyle bigWithOpacity = const TextStyle(

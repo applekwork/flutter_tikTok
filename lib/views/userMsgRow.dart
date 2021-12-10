@@ -18,9 +18,9 @@ class UserMsgRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var list = <Widget>[
-      Text(title ?? '用户', style: StandartTextStyle.normal),
+      Text(title ?? '用户', style: StandardTextStyle.normal),
       Container(height: 2),
-      Text(desc ?? '和你打了下招呼', style: StandartTextStyle.smallWithOpacity)
+      Text(desc ?? '和你打了下招呼', style: StandardTextStyle.smallWithOpacity)
     ];
     var info = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +29,7 @@ class UserMsgRow extends StatelessWidget {
     var right = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text('10-22', style: StandartTextStyle.smallWithOpacity)
+        Text('10-22', style: StandardTextStyle.smallWithOpacity)
       ],
     );
     var avartar = Container(
