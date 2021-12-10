@@ -1,7 +1,6 @@
 // Copyright 2014 The Flutter Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
@@ -21,7 +20,7 @@ class UnknownPage extends StatelessWidget {
   }
 }
 
-class HomePageController extends StatelessWidget {
+class HomePageController extends StatelessWidget with ChangeNotifierProvider {
   final List dataArr = <String>[
     "ListView",
     "UserInteraction",
@@ -31,7 +30,8 @@ class HomePageController extends StatelessWidget {
     "Animation",
     "HeroAnimation",
     "HttpRequest",
-    "Provider",
+    "Provider局部刷新（单组件/单页面内部状态）",
+    "Provider全局刷新（页面/组件状态共享）",
   ];
 
   void pushToNextController(String title) {
@@ -90,8 +90,10 @@ class HomePageController extends StatelessWidget {
                   Navigator.pushNamed(context, "httpRequest_Page");
                 } else if (itemStr == "DataPersistence") {
                   Navigator.pushNamed(context, "dataPersistence_Page");
-                } else if (itemStr == "Provider") {
+                } else if (itemStr == "Provider局部刷新（单组件/单页面内部状态）") {
                   Navigator.pushNamed(context, "provider_Page");
+                } else if (itemStr == 'Provider全局刷新（页面/组件状态共享）') {
+                  Navigator.pushNamed(context, "providerTwo_Page");
                 }
               },
               child: Center(
@@ -103,6 +105,9 @@ class HomePageController extends StatelessWidget {
   }
 }
 
+mixin ChangeNotifierProvider {}
+
+/*
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -145,3 +150,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+*/

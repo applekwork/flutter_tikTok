@@ -12,8 +12,12 @@ import 'package:flutter_demo/animationPage.dart';
 import 'package:flutter_demo/heroAnimation.dart';
 import 'package:flutter_demo/heroNextAnimation.dart';
 import 'package:flutter_demo/httpRequestPage.dart';
-import 'package:flutter_demo/provider.dart';
-
+import 'package:flutter_demo/ProviderPageOne.dart';
+import 'package:flutter_demo/ProviderPageTwo.dart';
+import 'package:flutter_demo/CountProviderModel.dart';
+// ignore: import_of_legacy_library_into_null_safe
+import 'package:provider/provider.dart';
+import 'package:flutter_demo/ListProviderModel.dart';
 void main() {
   /// 自定义报错页面
   if (kReleaseMode) {
@@ -28,7 +32,20 @@ void main() {
       );
     };
   }
-  runApp(MyApp());
+  // runApp(ChangeNotifierProvider(
+  //   create: (_) => CountProviderModel(),
+  //   child: MyApp(),
+  // ));
+  runApp(
+    // 多个 Model 需要全局共享时，需要用 MultiProvider 包一层
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CountProviderModel()),
+        ChangeNotifierProvider(create: (_) => ListProviderModel()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -54,15 +71,16 @@ class MyApp extends StatelessWidget {
        routes: {
         "listView_Page": (context) => ListViewPage(),
         "userInteraction_Page": (context) => UserInteraction(),
-        "tansferValue_Page": (context) => TansferValuePage(),
-        "customNotification_Page": (context) => CustomNotificationPage(),
-        "eventBus_Page": (context) => EventBusPage(),
+        "tansferValue_Page": (context) => TansferValuePage(),//inheritedWidget传值
+        "customNotification_Page": (context) => CustomNotificationPage(),//Notification传值
+        "eventBus_Page": (context) => EventBusPage(),//EventBus传值
         "secondScreen_Page": (context) => SecondScreen(),
         "animation_Page": (context) => AnimationPage(),
         "heroAnimation_Page": (context) => HeroAnimation(),
         "heroNextAnimation_Page": (context) => HeroNextAnimation(),
         "httpRequest_Page": (context) => HttpRequestPage(),
         "provider_Page": (context) => ProviderPage(),
+        "providerTwo_Page": (context) => ProviderPageTwo(),
       },
     );
   }

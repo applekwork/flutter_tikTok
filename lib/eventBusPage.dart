@@ -14,9 +14,7 @@ EventBus eventBus = new EventBus();
 
 class EventBusPage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _EventBusPageState();
-  }
+  _EventBusPageState createState() => _EventBusPageState();
 }
 
 class _EventBusPageState extends State<EventBusPage> {

@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
+//定义通知
 class CustomNotification extends Notification {
   CustomNotification(this.msg);
   final String msg;
@@ -18,9 +19,7 @@ class CustomChild extends StatelessWidget {
 class CustomNotificationPage extends StatefulWidget {
 
   @override
-  State<StatefulWidget> createState() {
-    return _CustomNotificationPageState();
-  }
+  _CustomNotificationPageState createState() => _CustomNotificationPageState();
 }
 
 class _CustomNotificationPageState extends State<CustomNotificationPage> {

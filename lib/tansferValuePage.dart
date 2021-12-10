@@ -38,9 +38,7 @@ class Counter extends StatelessWidget {
 
 class TansferValuePage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _TansferValuePageState();
-  }
+ _TansferValuePageState createState() => _TansferValuePageState();
 }
 
 class _TansferValuePageState extends State<TansferValuePage> {
