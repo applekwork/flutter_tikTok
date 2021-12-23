@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/style/style.dart';
+import 'package:flutter_demo/utility/styles.dart';
 import 'backButton.dart';
 
 class TikTokSwitchAppbar extends StatelessWidget {

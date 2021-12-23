@@ -1,0 +1,32 @@
+{
+  "name": "battery",
+  "version": "0.0.1",
+  "summary": "Flutter plugin for accessing information about the battery.",
+  "description": "A Flutter plugin to access various information about the battery of the device the app is running on.\nDownloaded by pub (not CocoaPods).",
+  "homepage": "https://github.com/flutter/plugins",
+  "license": {
+    "type": "BSD",
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Flutter Dev Team": "flutter-dev@googlegroups.com"
+  },
+  "source": {
+    "http": "https://github.com/flutter/plugins/tree/master/packages/battery"
+  },
+  "documentation_url": "https://pub.dev/packages/battery",
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "Flutter": [
+
+    ]
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64"
+  }
+}

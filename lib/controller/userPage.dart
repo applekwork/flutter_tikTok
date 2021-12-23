@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/style/style.dart';
+import 'package:flutter_demo/utility/styles.dart';
 import 'package:flutter_demo/views/topToolRow.dart';
 import 'package:flutter_demo/controller/userPageDetail.dart';
 import 'package:tapped/tapped.dart';

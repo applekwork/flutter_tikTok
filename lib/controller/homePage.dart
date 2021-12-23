@@ -5,10 +5,10 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/listViewPage.dart';
-import 'package:flutter_demo/userInteraction.dart';
-import 'package:flutter_demo/tansferValuePage.dart';
-import 'package:flutter_demo/customNotification.dart';
+import 'package:flutter_demo/example/listViewPage.dart';
+import 'package:flutter_demo/example/userInteraction.dart';
+import 'package:flutter_demo/example/tansferValuePage.dart';
+import 'package:flutter_demo/example/customNotification.dart';
 
 class UnknownPage extends StatelessWidget {
   @override

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'package:safemap/safemap.dart';
 import 'package:tapped/tapped.dart';
-import 'package:flutter_demo/style/style.dart';
+import 'package:flutter_demo/utility/styles.dart';
 
 class FollowPage extends StatefulWidget {
   @override

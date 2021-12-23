@@ -1,20 +1,18 @@
 import 'package:flutter_demo/controller/appPage.dart';
-import 'package:flutter_demo/style/style.dart';
+import 'package:flutter_demo/utility/styles.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/secondScreen.dart';
-import 'package:flutter_demo/listViewPage.dart';
-import 'package:flutter_demo/userInteraction.dart';
-import 'package:flutter_demo/tansferValuePage.dart';
-import 'package:flutter_demo/customNotification.dart';
-import 'package:flutter_demo/eventBusPage.dart';
-import 'package:flutter_demo/animationPage.dart';
-import 'package:flutter_demo/heroAnimation.dart';
-import 'package:flutter_demo/heroNextAnimation.dart';
-import 'package:flutter_demo/httpRequestPage.dart';
-import 'package:flutter_demo/ProviderPageOne.dart';
-import 'package:flutter_demo/controller/appPage.dart';
-import 'package:flutter_demo/controller/homePage.dart';
+import 'package:flutter_demo/example/secondScreen.dart';
+import 'package:flutter_demo/example/listViewPage.dart';
+import 'package:flutter_demo/example/userInteraction.dart';
+import 'package:flutter_demo/example/tansferValuePage.dart';
+import 'package:flutter_demo/example/customNotification.dart';
+import 'package:flutter_demo/example/eventBusPage.dart';
+import 'package:flutter_demo/example/animationPage.dart';
+import 'package:flutter_demo/example/heroAnimation.dart';
+import 'package:flutter_demo/example/heroNextAnimation.dart';
+import 'package:flutter_demo/example/httpRequestPage.dart';
+import 'package:flutter_demo/example/providerPageOne.dart';
 
 void main() {
   /// 自定义报错页面
